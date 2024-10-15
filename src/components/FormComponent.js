@@ -1,9 +1,8 @@
-// src/components/FormComponent.js
 import React from 'react';
 import { useForm, Controller } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as Yup from 'yup';
-import Field from './Field';  // Component to render individual form fields
+import Field from './Field';  
 
 const FormComponent = ({ fields, onSubmit }) => {
   const validationSchema = Yup.object().shape(
